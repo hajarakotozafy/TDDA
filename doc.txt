@@ -1,0 +1,122 @@
+#---------------- USER ----------------
+#Get Users
+#Route: GET /api/user
+
+#Set User
+#Route: POST /api/user
+#Body:
+{
+    "userName": "",
+    "userLastName": "",
+    "userEmail": "",
+    "userPassword": "",
+    "userCreatedAt": ""
+}
+
+#Delete User
+#Route: DELETE /api/user/specific/:id
+
+#Put User
+#Route: PUT /api/user/specific/:id
+#Body:
+{
+    "userName": "",
+    "userLastName": "",
+    "userEmail": "",
+    "userPassword": "",
+    "userUpdatedAt": "",
+}
+
+#Get Specific User
+#Route: GET /api/user/specific/:id
+
+#Get Actived Users
+#Route: GET /api/user/actived
+
+#Get Deactived User
+#Route: GET /api/user/deactived
+
+#--------------------------------------
+
+#---------------- DEVICE ----------------
+#Get Devices
+#Route: GET /api/device
+
+#Set Device
+#Route: POST /api/device
+#Body:
+{
+    "dvcName": "",
+    "dvcDescription": "",
+    "dvcCreatedAt": "",
+    "stateId": , #1: Connected / 2: Deconnected / 3: Deleted
+    "userId": 
+}
+
+#Delete Device
+#Route: DELETE /api/device/specific/:id
+
+#Put Device
+#Route: PUT /api/device/specific/:id
+#Body: 
+{
+    "dvcName": "",
+    "dvcDescription": "",
+    "dvcUpdatedAt": ""
+}
+
+#Get Specific Device
+#Route: GET /api/device/specific/:id
+
+#Disconnect Device
+#Route: PUT /api/device/disconnect/:id
+
+#Connect Device
+#Route: PUT /api/device/connect/:id
+
+#Get Connected Devices
+#Route: GET /api/device/connected
+
+#Get Disconnected Devices
+#Route: GET /api/device/disconnected
+
+#Get Deleted Devices
+#Route: GET /api/device/deleted
+
+#----------------------------------------
+
+#---------------- DEVICE ACTIONS ----------------
+#Get dvcActions
+#Route: GET /api/device_actions
+
+#Get specific user dvcActions
+#Route: GET /api/device_actions/userspecific/:id
+
+#Set device action
+#Route: POST /api/device_actions
+#Body:
+{
+    "dactName": "",
+    "dactDescription": "",
+    "dactDate": "",
+    "dactCreatedAt": "",
+    "deviceId":
+}
+
+#Delete device action
+#Route: DELETE /api/device_actions/specific/:id
+
+#Put device action
+#Route: PUT /api/device_actions/specific/:id
+#Body:
+{
+    "dactName": "",
+    "dactDescription": "",
+    "dactDate": "",
+    "dactUpdatedAt": ""
+}
+
+#Get specific device action
+#Route: GET /api/device_actions/specific/:id
+
+#------------------------------------------------
